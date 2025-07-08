@@ -18,6 +18,7 @@ nav {
     font-size: 45px;
     font-weight: 800;
     color: #000;
+    margin-left:50px;
 }
 
 .text-primary {
@@ -52,16 +53,56 @@ nav ul li a:hover {
     border-radius: 5px;
     cursor: pointer;
 }
+/* Header styles */
+.header {
+    background-image: url("../web_portfolio/images/developer.png"), url("../web_portfolio/images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: contain, auto; /* Keep header_bg.png at its original size */
+    background-origin: border-box;
+    background-clip: border-box;
+    min-height: 400px; /* Adjust as needed for your layout */
+}
+
+/*banner styles */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 200px;
+}
+.banner-greeting {
+    margin-top: 45px;
+    font-weight: 600;
+}
+.banner-title {
+    font-size: 85px;
+    font-weight: bold;
+}
+.banner-content {
+    max-width: 580px;
+}
 
 
+
+
+
+
+
+
+/* Footer styles */
 
 
 
 
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     padding: 20px 0;
     background-color: #f1f1f1;
     font-size: 14px;
+    z-index: 100;
 }
